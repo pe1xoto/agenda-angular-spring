@@ -9,6 +9,5 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes),
     provideHttpClient(),
     provideAnimations(),
-    // Adicione outros providers globais aqui
   ]
 };
