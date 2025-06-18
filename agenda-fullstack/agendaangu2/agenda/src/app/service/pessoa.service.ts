@@ -7,7 +7,7 @@ import { Pessoa } from '../model/pessoa.model';
   providedIn: 'root'
 })
 export class PessoaService {
-  private apiUrl = 'http://localhost:8080/api/pessoas';  // Corrigido para /api/pessoas
+  private apiUrl = 'http://localhost:8080/api/pessoas';
 
   constructor(private http: HttpClient) { }
 
