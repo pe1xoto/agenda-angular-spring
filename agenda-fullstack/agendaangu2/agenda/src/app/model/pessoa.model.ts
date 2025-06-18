@@ -1,17 +1,3 @@
-export interface Pessoa {
-    id?: number;
-    nome: string;
-    cpfCnpj: string;
-    telefone: string;
-    email: string;
-    funcao: string;
-    login: string;
-    senha: string;
-    perfil: string;
-  }
-  
-  // OU se preferir usar classe:
-  
   export class Pessoa {
     constructor(
       public id?: number,
@@ -25,8 +11,6 @@ export interface Pessoa {
       public perfil: string = ''
     ) {}
   
-    // Remova os getters se estiver usando interface
-    // Se usar classe, declare os getters corretamente:
     get cpfFormatado(): string {
       if (!this.cpfCnpj) return '';
       const cleanCpf = this.cpfCnpj.replace(/\D/g, '');
